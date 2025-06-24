@@ -42,3 +42,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+document.querySelectorAll('.dropdown .links a').forEach(link => {
+  link.addEventListener('click', () => {
+    const cancelButton = document.querySelector('.cancel');
+    if (cancelButton) {
+      cancelButton.click();
+    }
+  });
+});
+
